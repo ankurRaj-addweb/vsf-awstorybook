@@ -176,7 +176,7 @@ export const WithDescriptionSlot = (args, { argTypes }) => ({
     :description="description">
     <template #description="{description}">
       <div style="display: flex; align-items: center">
-        {{description}} <SfIcon icon="gift" size="xxs" style="margin-left: 1rem"/>
+        {{description}} <AwIcon icon="gift" size="xxs" style="margin-left: 1rem"/>
       </div>
     </template>        
   </AwHeading>`,

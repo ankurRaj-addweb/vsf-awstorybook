@@ -4,7 +4,7 @@
     :style="[data.style, data.staticStyle]"
   >
     <component
-      :is="injections.components.SfButton"
+      :is="injections.components.AwButton"
       :disabled="
         props.disabled || Boolean(props.min !== null && props.qty <= props.min)
       "

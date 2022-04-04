@@ -9,7 +9,7 @@
           type="button"
           @click="$emit('click:back')"
         >
-          AwfIcon icon="chevron_left" size="0.875rem" />
+          <AwIcon icon="chevron_left" size="0.875rem" />
         </AwButton>
       </slot>
     </div>

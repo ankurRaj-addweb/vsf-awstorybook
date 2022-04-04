@@ -208,7 +208,7 @@ Cross.args = {
 };
 
 export const UseCloseSlot = (args, { argTypes }) => ({
-  components: { SfModal },
+  components: { AwModal },
   props: Object.keys(argTypes),
   template: `
   <AwModal

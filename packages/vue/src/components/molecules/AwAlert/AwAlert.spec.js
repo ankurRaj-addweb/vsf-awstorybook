@@ -1,6 +1,6 @@
 import { shallowMount } from "@vue/test-utils";
 import AwAlert from "./AwAlert.vue";
-describe("SfAlert.vue", () => {
+describe("AwAlert.vue", () => {
   it("renders an alert", () => {
     const component = shallowMount(AwAlert);
     expect(component.classes("sf-alert")).toBe(true);

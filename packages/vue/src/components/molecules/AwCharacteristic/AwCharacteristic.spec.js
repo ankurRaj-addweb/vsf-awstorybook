@@ -1,6 +1,6 @@
 import { shallowMount } from "@vue/test-utils";
 import AwCharacteristic from "./AwCharacteristic.vue";
-describe.only("SfCharacteristic.vue", () => {
+describe.only("AwCharacteristic.vue", () => {
   it("renders a characteristic", () => {
     const component = shallowMount(AwCharacteristic);
     expect(component.classes("sf-characteristic")).toBe(true);

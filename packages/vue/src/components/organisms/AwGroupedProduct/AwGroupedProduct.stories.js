@@ -222,7 +222,7 @@ export default {
     imagePictureBreakpoint: {
       control: "number",
       table: {
-        category: "Props for SfGroupedProductItem component",
+        category: "Props for AwGroupedProductItem component",
       },
       defaultValue: 576,
       description: "Product image picture breakpoint",
@@ -230,7 +230,7 @@ export default {
     title: {
       control: "text",
       table: {
-        category: "Props for SfGroupedProductItem component",
+        category: "Props for AwGroupedProductItem component",
         type: {
           summary: "string",
         },
@@ -241,7 +241,7 @@ export default {
     priceRegular: {
       control: "text",
       table: {
-        category: "Props for SfGroupedProductItem component",
+        category: "Props for AwGroupedProductItem component",
         type: {
           summary: ["string", "number"],
         },
@@ -252,7 +252,7 @@ export default {
     priceSpecial: {
       control: "text",
       table: {
-        category: "Props for SfGroupedProductItem component",
+        category: "Props for AwGroupedProductItem component",
         type: {
           summary: ["string", "number"],
         },
@@ -263,7 +263,7 @@ export default {
     qty: {
       control: "number",
       table: {
-        category: "Props for SfGroupedProductItem component",
+        category: "Props for AwGroupedProductItem component",
         type: {
           summary: ["string", "number"],
         },
@@ -275,7 +275,7 @@ export default {
     link: {
       control: "text",
       table: {
-        category: "Props for SfGroupedProductItem component",
+        category: "Props for AwGroupedProductItem component",
         type: {
           summary: ["string", "object"],
         },
@@ -297,7 +297,7 @@ export default {
       },
       defaultValue: 1,
       description:
-        "v-model in SfGroupedProductItem accepts `qty` prop and emits native events",
+        "v-model in AwGroupedProductItem accepts `qty` prop and emits native events",
     },
     input: {
       action: "input event emitted",
@@ -312,7 +312,7 @@ export default {
         },
       },
       description:
-        "Default slot for `SfGroupedProduct` component. Use this slot to place grouped product items",
+        "Default slot for `AwGroupedProduct` component. Use this slot to place grouped product items",
     },
     "title ": {
       table: {
@@ -322,7 +322,7 @@ export default {
         },
       },
       description:
-        "Named slot `title` for `SfGroupedProductItem` component. Use this slot to replace title element",
+        "Named slot `title` for `AwGroupedProductItem` component. Use this slot to replace title element",
     },
     "image ": {
       table: {
@@ -332,7 +332,7 @@ export default {
         },
       },
       description:
-        "Named slot `image` for `SfGroupedProductItem` component. Use this slot to replace image element",
+        "Named slot `image` for `AwGroupedProductItem` component. Use this slot to replace image element",
     },
     details: {
       table: {
@@ -342,7 +342,7 @@ export default {
         },
       },
       description:
-        "Named slot for `SfGroupedProductItem` component. Use this slot to pass custom details",
+        "Named slot for `AwGroupedProductItem` component. Use this slot to pass custom details",
     },
     configuration: {
       table: {
@@ -352,7 +352,7 @@ export default {
         },
       },
       description:
-        "Named slot for `SfGroupedProductItem` component. Use this slot to pass custom configuration",
+        "Named slot for `AwGroupedProductItem` component. Use this slot to pass custom configuration",
     },
     price: {
       table: {
@@ -362,7 +362,7 @@ export default {
         },
       },
       description:
-        "Named slot for `SfGroupedProductItem` component. Use this slot to pass custom price element",
+        "Named slot for `AwGroupedProductItem` component. Use this slot to pass custom price element",
     },
     input: {
       table: {
@@ -372,7 +372,7 @@ export default {
         },
       },
       description:
-        "Named slot for `SfGroupedProductItem` component. Use this slot to replace quantity selector",
+        "Named slot for `AwGroupedProductItem` component. Use this slot to replace quantity selector",
     },
   },
 };
@@ -417,7 +417,7 @@ const Template = (args, { argTypes }) => ({
 export const Common = Template.bind({});
 Common.args = {
   settings: { type: "slider" },
-  image: "/assets/storybook/SfGroupedProduct/product-white.png",
+  image: "/assets/storybook/AwGroupedProduct/product-white.png",
   imageWidth: 82,
   imageHeight: 112,
   title: "Leave white brooch",

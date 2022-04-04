@@ -295,7 +295,7 @@ Disabled.args = {
 };
 
 export const UseCheckmarkSlot = (args, { argTypes }) => ({
-  components: { SfCheckbox },
+  components: { AwCheckbox },
   props: Object.keys(argTypes),
   data() {
     return {
@@ -303,7 +303,7 @@ export const UseCheckmarkSlot = (args, { argTypes }) => ({
     };
   },
   template: `
-  <SfCheckbox 
+  <AwCheckbox 
     v-model="checked"
     :name="name"
     :label="label"
@@ -317,7 +317,7 @@ export const UseCheckmarkSlot = (args, { argTypes }) => ({
       <span v-if="isChecked">👍🏻</span>
       <span v-else>👎🏻</span>
     </template>
-  </SfCheckbox>`,
+  </AwCheckbox>`,
 });
 UseCheckmarkSlot.args = {
   ...Common.args,
@@ -325,7 +325,7 @@ UseCheckmarkSlot.args = {
 };
 
 export const UseErrorMessageSlot = (args, { argTypes }) => ({
-  components: { SfCheckbox },
+  components: { AwCheckbox },
   props: Object.keys(argTypes),
   data() {
     return {
@@ -333,7 +333,7 @@ export const UseErrorMessageSlot = (args, { argTypes }) => ({
     };
   },
   template: `
-  <SfCheckbox 
+  <AwCheckbox 
     v-model="checked"
     :name="name"      
     :label="label"
@@ -347,6 +347,6 @@ export const UseErrorMessageSlot = (args, { argTypes }) => ({
       <template #show-error-message="{ errorMessage }">
         <span> CUSTOM ERROR MESSAGE 👈</span>
       </template>
-    </SfCheckbox>`,
+    </AwCheckbox>`,
 });
 UseErrorMessageSlot.args = { ...Invalid.args };

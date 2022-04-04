@@ -194,7 +194,7 @@ const Template = (args, { argTypes }) => ({
     <template>
       <AwList>
         <AwListItem v-for="(action, key) in actionList" :key="key">
-          <AwButton class="sf-button--full-width sf-button--underlined color-primary" @click.stop="isDropdownOpen = false">{{ action }}</SfButton>
+          <AwButton class="sf-button--full-width sf-button--underlined color-primary" @click.stop="isDropdownOpen = false">{{ action }}</AwButton>
         </AwListItem>
       </AwList>
     </template> 

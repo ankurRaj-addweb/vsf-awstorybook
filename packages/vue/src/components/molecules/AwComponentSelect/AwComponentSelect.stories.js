@@ -356,7 +356,7 @@ const Template = (args, { argTypes }) => ({
     @change="change"
   >
     <AwComponentSelectOption v-for="(option, key) in options" :key="key" :value="option.value">
-      <AwProductOption :color="option.color" :label="option.label"></SfProductOption>
+      <AwProductOption :color="option.color" :label="option.label"></AwProductOption>
     </AwComponentSelectOption>
   </AwComponentSelect>`,
 });
@@ -433,7 +433,7 @@ export const UseLabelSlot = (args, { argTypes }) => ({
     :persistent="persistent"       
     >
     <AwComponentSelectOption v-for="(option, key) in options" :key="key" :value="option.value">
-      <AwProductOption :color="option.color" :label="option.label"></SfProductOption>
+      <AwProductOption :color="option.color" :label="option.label"></AwProductOption>
     </AwComponentSelectOption>
     <template #label>
       CUSTOM LABEL
@@ -462,7 +462,7 @@ export const UseErrorMessageSlot = (args, { argTypes }) => ({
     :cancel-label="cancelLabel"
     >
     <AwComponentSelectOption v-for="(option, key) in options" :key="key" :value="option.value">
-      <AwProductOption :color="option.color" :label="option.label"></SfProductOption>
+      <AwProductOption :color="option.color" :label="option.label"></AwProductOption>
     </AwComponentSelectOption>
     <template #errorMessage>
       CUSTOM ERROR MESSAGE

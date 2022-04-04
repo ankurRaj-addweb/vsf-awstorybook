@@ -1,4 +1,4 @@
-Aw<template>
+<template>
   <div
     v-will-change="'font-size'"
     class="sf-input"

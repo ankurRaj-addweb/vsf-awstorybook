@@ -1,4 +1,4 @@
-import { AwImage } from "./AwImage.vue";
+import AwImage from "./AwImage.vue";
 
 export default {
   title: "Components/Atoms/Image",

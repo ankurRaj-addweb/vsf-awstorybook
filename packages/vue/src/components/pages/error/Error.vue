@@ -12,6 +12,7 @@
       :src="require('@storefront-ui/shared/icons/error.svg')"
       alt="Page Not Found"
       :width="230"
+
       :height="230" 
     />
     <AwHeading

@@ -1,7 +1,7 @@
 import "./matchMedia.mock";
 import { shallowMount } from "@vue/test-utils";
 import AwBanner from "./AwBanner.vue";
-describe("SfBanner.vue", () => {
+describe("AwBanner.vue", () => {
   it("renders a banner", () => {
     const component = shallowMount(AwBanner);
     expect(component.classes("sf-banner")).toBe(true);

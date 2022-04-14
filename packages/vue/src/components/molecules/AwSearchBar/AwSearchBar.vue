@@ -1,38 +1,28 @@
 <template>
-  <div class="sf-search-bar">
-    <input
-      v-focus
-      class="sf-search-bar__input"
-      type="search"
-      :value="value"
-      v-bind="$attrs"
-      :placeholder="placeholder"
-      v-on="listeners"
-    />
-    <slot name="icon">
-      <AwButton
-        class="sf-search-bar__button sf-button--pure"
-        type="button"
-        aria-label="Search"
-        @click="$emit('click', value)"
-      >
-        <span v-if="icon" class="sf-search-bar__icon">
-          <AwIcon :color="icon.color" :size="icon.size" icon="search" />
-        </span>
-      </AwButton>
-    </slot>
-  </div>
+  <AwInput
+    v-focus
+    class="sf-search-bar"
+    type="search"
+    name="search"
+    :value="value"
+    :placeholder="placeholder"
+    :icon="icon"
+    v-bind="$attrs"
+    v-on="listeners"
+    @keyup.enter="$emit('input', value)"
+  >
+  </AwInput>
 </template>
 <script>
-import AwIcon from "../../atoms/AwIcon/AwIcon.vue";
-import AwButton from "../../atoms/AwButton/AwButton.vue";
+import AwInput from "../../atoms/AwInput/AwInput.vue";
 import { focus } from "../../../utilities/directives";
+
 export default {
-  name: "SfSearchBar",
+  name: "AwSearchBar",
+  components: { AwInput },
   directives: {
     focus,
   },
-  components: { AwIcon, AwButton },
   inheritAttrs: false,
   props: {
     placeholder: {
@@ -52,10 +42,9 @@ export default {
     listeners() {
       return {
         ...this.$listeners,
-        input: (event) => this.$emit("input", event.target.value),
-        "keyup.enter": (event) => this.$emit("input", event.target.value),
         "keyup.esc": () => this.$emit("input", ""),
         blur: () => this.$emit("blur"),
+        "click:icon": () => this.$emit("click:icon", this.value),
       };
     },
   },

@@ -13,7 +13,7 @@
     >
       <slot name="prev" v-bind="{ go: () => go('prev') }">
         <AwArrow
-          class="sf-arrow--transparent"
+          class="sf-arrow sf-arrow--transparent"
           aria-label="previous"
           data-testid="hero-prev-button"
           @click.stop="go('prev')"
@@ -26,7 +26,7 @@
     >
       <slot name="next" v-bind="{ go: () => go('next') }">
         <AwArrow
-          class="sf-arrow--right sf-arrow--transparent"
+          class="sf-arrow sf-arrow--right sf-arrow--transparent"
           aria-label="next"
           data-testid="hero-next-button"
           @click.stop="go('next')"
@@ -35,7 +35,7 @@
     </div>
     <div
       :class="{ 'display-none': numberOfPages <= 1 }"
-      class="Aw-hero__bullets"
+      class="sf-hero__bullets"
     >
       <slot name="bullets" v-bind="{ numberOfPages, page, go }">
         <AwBullets

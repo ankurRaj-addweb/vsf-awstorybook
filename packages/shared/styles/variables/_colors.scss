@@ -1,25 +1,26 @@
 @import "../helpers/colors";
 html {
-@include generate-color-variants(--c-black, #1d1f22);
---c-white: #ffffff;
-// Internal color variables
-/* Should NOT be used directly for theming or component styles */
-@include generate-color-variants(--_c-green-primary, #037EE6);
-@include generate-color-variants(--_c-green-tertiary, #4BB543);
-@include generate-color-variants(--_c-green-secondary, #219CFF);
-@include generate-color-variants(--_c-dark-primary, #282828);
-@include generate-color-variants(--_c-dark-secondary, #3C3C3C);
-@include generate-color-variants(--_c-gray-primary, #72757E);
-@include generate-color-variants(--_c-gray-secondary, #8D8F9A);
-@include generate-color-variants(--_c-gray-accent, #e0e0e1);
-@include generate-color-variants(--_c-light-primary, #EFEFEF);
-@include generate-color-variants(--_c-light-secondary, #F9F9F9);
-@include generate-color-variants(--_c-red-primary, #D12727);
-@include generate-color-variants(--_c-red-secondary, #fcede8);
-@include generate-color-variants(--_c-yellow-primary, #ecc713);
-@include generate-color-variants(--_c-yellow-secondary, #f6e389);
-@include generate-color-variants(--_c-blue-primary, #037EE6);
-@include generate-color-variants(--_c-blue-secondary, #e1f4fe);
+
+  @include generate-color-variants(--c-black, #1d1f22);
+  --c-white: #ffffff;
+  // Internal color variables
+  /* Should NOT be used directly for theming or component styles */
+  @include generate-color-variants(--_c-green-primary, #3f6deb);
+  @include generate-color-variants(--_c-green-secondary, #9eb3e2);
+  @include generate-color-variants(--_c-dark-primary, #1d1f22);
+  @include generate-color-variants(--_c-dark-secondary, #43464E);
+  @include generate-color-variants(--_c-gray-primary, #72757E);
+  @include generate-color-variants(--_c-gray-secondary, #8D8F9A);
+  @include generate-color-variants(--_c-gray-accent, #e0e0e1);
+  @include generate-color-variants(--_c-light-primary, #f1f2f3);
+  @include generate-color-variants(--_c-light-secondary, #ffffff);
+  @include generate-color-variants(--_c-red-primary, #d12727);
+  @include generate-color-variants(--_c-red-secondary, #fcede8);
+  @include generate-color-variants(--_c-yellow-primary, #ecc713);
+  @include generate-color-variants(--_c-yellow-secondary, #f6e389);
+  @include generate-color-variants(--_c-blue-primary, #0468DB);
+  @include generate-color-variants(--_c-blue-secondary, #e1f4fe);
+
 
 /* Theme color variables */
 // Body and text defaults

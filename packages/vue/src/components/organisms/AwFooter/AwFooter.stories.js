@@ -194,7 +194,7 @@ const Template = (args, { argTypes }) => ({
         <AwImage 
           v-for="picture in social.pictures" 
           :key="picture" 
-          :src="'/assets/storybook/AwFooter/'+picture+'.svg'" 
+          :src="'/assets/storybook/SfFooter/'+picture+'.svg'" 
           :alt="picture" 
           :width="32"
           :height="32"
@@ -203,7 +203,7 @@ const Template = (args, { argTypes }) => ({
       <AwFooterColumn title="Language" class="desktop-only">
         <AwButton class="sf-button--pure" style="display: flex; align-self: end; color: white;">
           <AwImage
-            src="/assets/storybook/AwFooter/flag.png"
+            src="/assets/storybook/SfFooter/flag.png"
             alt="flag of the USA"
             :width="20"
             :height="20"
@@ -228,7 +228,7 @@ const Template = (args, { argTypes }) => ({
           <div style="display: flex; justify-content: space-around; width: 100%;  margin-bottom: 32px;">
             <AwImage 
               v-for="picture in social.pictures" 
-              :key="picture" :src="'/assets/storybook/AwFooter/'+picture+'.svg'" 
+              :key="picture" :src="'/assets/storybook/SfFooter/'+picture+'.svg'" 
               :alt="picture"
               :width="32"
               :height="32"

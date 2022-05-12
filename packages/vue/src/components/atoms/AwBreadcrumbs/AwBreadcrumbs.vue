@@ -30,7 +30,7 @@
         <template v-else>
           <slot name="current" v-bind="{ breadcrumb }">
             <component
-              :is="injections.components.SfLink"
+              :is="injections.components.AwLink"
               :link="breadcrumb.link"
               class="sf-breadcrumbs__breadcrumb current"
             >

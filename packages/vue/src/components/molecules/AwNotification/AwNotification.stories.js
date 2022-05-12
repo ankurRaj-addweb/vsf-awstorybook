@@ -303,7 +303,7 @@ export const UseIconSlot = (args, { argTypes }) => ({
     @click:action="this['click:action']"
   >
     <template #icon="{icon}">
-      <SfIcon icon="heart" color="white"/>
+      <AwIcon icon="heart" color="white"/>
     </template>
   </AwNotification>`,
 });

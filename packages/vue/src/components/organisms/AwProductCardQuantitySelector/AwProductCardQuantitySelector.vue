@@ -1,6 +1,6 @@
 <template>
   <div
-    class="sf-product-card"
+    class="sf-product-card product-listview"
     :class="{ 'has-colors': colors.length }"
     data-testid="product-card"
   >
@@ -212,18 +212,17 @@
       </div>
     </slot>
     <template>
-        <div class="sf-quantity-selector selector">
+        <div class="sf-quantity-selector">
           <button
             class="sf-button--pure sf-quantity-selector__button sf-button"
             :aria-disabled="false"
             :link="null"
             data-testid="decrease"
-            @click="decrementvalue()" 
-                
+            @click="decrementvalue()"
           >
             −
           </button>
-          <div style="padding:24px;">
+          <div style="padding:25px;">
             {{qvalue}}
           </div>
           <button
@@ -444,11 +443,12 @@ export default {
   },
 };
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 @import "~@storefront-ui/shared/styles/components/organisms/SfProductCardQuantitySelector.scss";
 </style>
 <style scoped>
 .selector{
   margin-top: 15px;
 }
+
 </style>

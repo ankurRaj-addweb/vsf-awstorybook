@@ -183,3 +183,14 @@
     }
   }
 }
+.product-listview {
+  .sf-quantity-selector {
+    display: none;
+  }
+  &:hover {
+    .sf-quantity-selector {
+      display: flex;
+      margin-top: 16px;
+    }
+  }
+}
